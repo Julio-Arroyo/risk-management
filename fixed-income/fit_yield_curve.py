@@ -13,7 +13,7 @@ def get_yield_curve(date: str) -> List[float]:
     """
     Return a list. 'yield_curve[i]' corresponds to 'MATURITIES[i]'
     """
-    fred = fredapi.Fred(api_key='fd97b1fdb076ff1a86aff9b38d7a0e70')
+    fred = fredapi.Fred(api_key='FILL_ME_IN')
     yield_curve = []
     for series_name in SERIES_NAMES:
         yield_ = fred.get_series(series_name,
